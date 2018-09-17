@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cat Clicker.</title>
+	<style type="text/css">
+    .list {
+      width: 200px;
+    }
+    .list > li {
+      list-style-type: none;
+    }
+    h1, p {
+      text-align: center;
+    }
+    .cats {
+      position: absolute;
+      top: 30px;
+      left: 220px;
+      width: 400px;
+      height: 350px;
+    }
+    .control {
+      position: absolute;
+      bottom: 60px;
+      left: 30px;
+    }
+	</style>
+</head>
+<body>
+  <div class="main">
+    <ul class="list"></ul>
+    <div class="cats">
+        <h1 class="name"></h1>
+        <p class="click-count"></p>
+        <img width="400" height="350" class="show-area" />
+      </div>
+    <div class="control">
+      <button class="admin" >管理员</button>
+      <div class="control-area">
+        <label for="cat-name"> 猫的名称:</label>
+        <input type="text" name="cat" id="cat-name" class="cat-name" />
+        <label for="url"> 猫的图片路径:</label>
+        <input type="text" name="url" id="url" class="cat-url">
+        <label for="url"> 猫的点击数:</label>
+        <input type="text" name="num" class="cat-num">
+        <button class="hide">消失</button>
+        <button class="save">保存</button>
+      </div>
+    </div>
+  </div>
+  <script src="cat_click.js"></script>
+</body>
+</html>
